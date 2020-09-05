@@ -12,6 +12,8 @@
 		6575BDF42503DD2C006219B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6575BDF22503DD2C006219B9 /* Main.storyboard */; };
 		6575BDF62503DD31006219B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6575BDF52503DD31006219B9 /* Assets.xcassets */; };
 		6575BDF92503DD31006219B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6575BDF72503DD31006219B9 /* LaunchScreen.storyboard */; };
+		6575C54B2503DE460093FEC0 /* OneSkyOTAPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6575C54A2503DE460093FEC0 /* OneSkyOTAPlugin.framework */; };
+		65EF75762503E42200BA23A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65EF75782503E42200BA23A8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,13 @@
 		6575BDF52503DD31006219B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6575BDF82503DD31006219B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6575BDFA2503DD31006219B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6575C54A2503DE460093FEC0 /* OneSkyOTAPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSkyOTAPlugin.framework; sourceTree = "<group>"; };
+		6575C54C2503DFEB0093FEC0 /* OTA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OTA-Bridging-Header.h"; sourceTree = "<group>"; };
+		65EF756F2503E28900BA23A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		65EF75712503E2C300BA23A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		65EF75732503E2C400BA23A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		65EF75772503E42200BA23A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65EF75792503E42600BA23A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6575C54B2503DE460093FEC0 /* OneSkyOTAPlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +64,25 @@
 		6575BDEB2503DD2C006219B9 /* OTA */ = {
 			isa = PBXGroup;
 			children = (
+				6575C54C2503DFEB0093FEC0 /* OTA-Bridging-Header.h */,
+				6575C5492503DE0F0093FEC0 /* OTAPlugin */,
 				6575BDEC2503DD2C006219B9 /* AppDelegate.swift */,
 				6575BDF02503DD2C006219B9 /* ViewController.swift */,
 				6575BDF22503DD2C006219B9 /* Main.storyboard */,
 				6575BDF52503DD31006219B9 /* Assets.xcassets */,
 				6575BDF72503DD31006219B9 /* LaunchScreen.storyboard */,
 				6575BDFA2503DD31006219B9 /* Info.plist */,
+				65EF75782503E42200BA23A8 /* Localizable.strings */,
 			);
 			path = OTA;
+			sourceTree = "<group>";
+		};
+		6575C5492503DE0F0093FEC0 /* OTAPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				6575C54A2503DE460093FEC0 /* OneSkyOTAPlugin.framework */,
+			);
+			path = OTAPlugin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +117,7 @@
 				TargetAttributes = {
 					6575BDE82503DD2C006219B9 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -106,6 +128,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6575BDE02503DD2C006219B9;
 			productRefGroup = 6575BDEA2503DD2C006219B9 /* Products */;
@@ -123,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6575BDF92503DD31006219B9 /* LaunchScreen.storyboard in Resources */,
+				65EF75762503E42200BA23A8 /* Localizable.strings in Resources */,
 				6575BDF62503DD31006219B9 /* Assets.xcassets in Resources */,
 				6575BDF42503DD2C006219B9 /* Main.storyboard in Resources */,
 			);
@@ -147,6 +171,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6575BDF32503DD2C006219B9 /* Base */,
+				65EF75712503E2C300BA23A8 /* en */,
+				65EF75732503E2C400BA23A8 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,8 +181,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				6575BDF82503DD31006219B9 /* Base */,
+				65EF756F2503E28900BA23A8 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		65EF75782503E42200BA23A8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65EF75772503E42200BA23A8 /* en */,
+				65EF75792503E42600BA23A8 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -166,6 +202,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -226,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -280,15 +318,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y7626TS68;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OTA/OTAPlugin",
+				);
 				INFOPLIST_FILE = OTA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = z1joey.OTA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OTA/OTA-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,15 +344,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y7626TS68;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OTA/OTAPlugin",
+				);
 				INFOPLIST_FILE = OTA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = z1joey.OTA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OTA/OTA-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

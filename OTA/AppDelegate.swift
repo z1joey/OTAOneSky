@@ -14,7 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        OneSkyOTAPlugin.provideAPIKey(apiKey, apiSecret: apiSecret, projectID: projectID)
+        OneSkyOTAPlugin.checkForUpdate()
         return true
     }
 }
+
+fileprivate let apiKey    = "4OeHshFi0gEY2cTSd0uzNpHc2d8hLmDF"
+fileprivate let apiSecret = "hwASNOc7ZSLw8WH4ZbgMvW5hzMG5pHow"
+fileprivate let projectID = "173424"
 

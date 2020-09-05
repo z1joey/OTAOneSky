@@ -9,12 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var onlyLabel: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        onlyLabel.text = OneSkyOTAPlugin.localizedString(forKey: key, value: "Null", table: nil)
     }
-
-
 }
+
+fileprivate let key = "text1"
+fileprivate let table = "HelloWorld"
 
